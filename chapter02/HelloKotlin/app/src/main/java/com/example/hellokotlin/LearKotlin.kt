@@ -34,7 +34,14 @@ fun main() {
 //    findLongestStringDemo2()
 //    testLambda()
 //    testLambda02()
-    testLambda03()
+//    testLambda03()
+
+    doStudy(null)
+}
+
+fun doStudy(study: Study?) {
+    study?.readBooks()
+    study?.doHomework()
 }
 
 fun testLambda03() {
