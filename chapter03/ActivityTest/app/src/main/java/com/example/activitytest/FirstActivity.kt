@@ -10,7 +10,7 @@ import android.view.MenuItem
 import android.widget.Button
 import android.widget.Toast
 
-class FirstActivity : AppCompatActivity() {
+class FirstActivity : BaseActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         // 加载设计好的布局
@@ -31,8 +31,10 @@ class FirstActivity : AppCompatActivity() {
 //            startActivity(intent)
 
             // 返回数据给上一个Activity
-            val intent = Intent(this, SecondActivity::class.java)
-            startActivityForResult(intent, 1)
+//            val intent = Intent(this, SecondActivity::class.java)
+//            startActivityForResult(intent, 1)
+
+            SecondActivity.actionStart(this, "data1", "data2")
         }
     }
 

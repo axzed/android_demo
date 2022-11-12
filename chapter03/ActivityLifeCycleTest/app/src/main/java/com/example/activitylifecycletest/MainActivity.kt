@@ -1,11 +1,11 @@
-package com.example.activitytest
+package com.example.activitylifecycletest
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 
-class ThirdActivity : BaseActivity() {
+class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.third_layout)
+        setContentView(R.layout.activity_main)
     }
 }
