@@ -1,11 +1,11 @@
-package com.example.activitylifecycletest
+package com.example.uiwidgettest
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 
-class NormalActivity : AppCompatActivity() {
+class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.normal_layout)
+        setContentView(R.layout.activity_main)
     }
 }
